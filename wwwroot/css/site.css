@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf0f5;
+}
+
+.main {
+    flex: auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 700;
+    padding: 0 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.countries-list .countries-list-item:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
